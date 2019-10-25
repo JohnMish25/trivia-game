@@ -13,29 +13,192 @@
 
 <body>
 
-        <div class="jumbotron col-4 mx-auto bg-white ">
-            <div class="open">
-                <h1 class="display-4 text-center">The Office Trivia Game!</h1>
-                <p class="lead text-center">This is a quiz based on the TV show, the Office. Click the "Start Game" button to begin!</p>
-                <hr class="my-4">
-                <p class="lead btn btn-lg btn-dark btn-block" id="gameStart">Start Game</p>
-                <img src="office.jpeg" class="img-thumbnail" alt="the office">
-              </div>
-            </div>
-
-        <div class = "questionsSection">
-            <div class = "bg-primary text-white">
-            <h1>The Office Trivia!</h1>
+    <div class="jumbotron col-4 mx-auto bg-white ">
+        <div class="open">
+            <h1 class="display-4 text-center">The Office Trivia Game!</h1>
+            <p class="lead text-center">This is a quiz based on the TV show, the Office. Click the "Start Game" button
+                to begin!</p>
+            <hr class="my-4">
+            <p class="lead btn btn-lg btn-dark btn-block" id="gameStart">Start Game</p>
+            <img src="office.jpeg" class="img-thumbnail" alt="the office">
         </div>
     </div>
 
+    <div class="questionsSection">
+        <div class="col-9 mx-auto">
+            <h1>The Office Trivia!</h1>
+
+            <p>1. Which of the following employees does NOT work in accounting?</p>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="correct"> Dwight Shrute
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Kevin Malone
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Oscar Martinez
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Angela Martin
+            </label>
+
+
+            <hr>
+
+
+            <p> 2. After quitting Dunder Mifflin, Michael Scott creates which new company?</p>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Shoe La La
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="correct"> The Michael Scott Paper
+                Company
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Sabre
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Dunder Mifflin Infinity
+            </div>
+            <hr>
 
 
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="game.js"></script>
+            <p>3. When Toby decides to leave the Office, he moves to which country?</p>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Dominican Republic
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Brazil
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="correct"> Costa Rica
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Mexico
+            </label>
+
+
+            <hr>
+
+            <p>4. A popular spot, the office employees attend for happy hour is _____ ?</p>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="correct"> Poor Richards
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Dave & Buster's 
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Sullivan's 
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Josies Woods Pub
+            </label>
+
+
+            <hr>
+
+            <p>5. Which of the following is NOT one of Dwight's interest/hobbies?</p>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Beets
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Bears
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Battlestar Galactica
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Call of Duty
+            </label>
+
+
+            <hr>
+
+
+            <p>6. Pam was previously engaged to this warehouse worker.</p>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="correct"> Roy Anderson
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Lonny Collins 
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Daryl Philbin
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Hidetoshi Hasagawa
+            </label>
+
+
+            <hr>
+
+            <p>7. What gift does Michael buy for Secret Santa?</p>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="correct"> iPod
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Oven Glove
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> An Old Plaid Shirt
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Teapot
+            </label>
+
+            <p>7. Which household appliance does Michael burn his foot on?</p>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="correct"> George Foreman Grill
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Coffee Maker
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Iron
+            </label>
+            <label class="form-check form-check-inline">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Toaster
+            </label>
+
+
+       
+
+
+            <hr>
+
+</div>
+                    <div class="bg-primary text-white p-4">
+                        <p class="col-4 lead btn btn-lg btn-dark btn-block mx-auto" id="submitBtn">See Results</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="resultsPage">
+                <div class="col-6 mx-auto bg-primary text-white p-4">
+                    <h1> Results Page </h1>
+                    <p>Correct Answers: <span id= "numCorrectAnswers"> </p>
+                    <p>Incorrect Answers: <span id= "numIncorrectAnswers"> </p>
+                    <p class="col-4 lead btn btn-lg btn-dark btn-block" id="playAgain">Play Again</p>
+                </div>
+            </div>
+
+            
+
+
+
+
+
+
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="game.js"></script>
 </body>
 
 </html>
