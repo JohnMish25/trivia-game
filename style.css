@@ -1,0 +1,20 @@
+.startPage {
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+}
+.timer {
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+}
+.questionsPage {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+}
+.resultsPage { 
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
