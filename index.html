@@ -27,6 +27,29 @@
     <div class="questionsSection">
         <div class="col-9 mx-auto">
             <h1>The Office Trivia!</h1>
+            <h2></h2><div class="clock"+ ></h2>
+
+                <div class = "alert alert-danger">
+                <div id="count"></div>
+                        </div>
+
+            </div>
+        <!--- The timer is inserted into the .html document. Could not get the timer to function properly when attached to my .js page. Used some of timer formula from stack overflow-->
+            <script>
+                var count = 60;
+                var interval = setInterval(function () {
+                    document.getElementById('count').innerHTML = count;
+                    count--;
+                    if (count === 0) {
+                        clearInterval(interval);
+                        document.getElementById('count').innerHTML = 'Game Over';  
+                    }
+                }, 1000);
+
+            </script>
+
+            </script>
+
 
             <p>1. Which of the following employees does NOT work in accounting?</p>
             <label class="form-check form-check-inline">
@@ -88,10 +111,10 @@
                 <input type="radio" name="optradio" class="optradio" value="correct"> Poor Richards
             </label>
             <label class="form-check form-check-inline">
-                <input type="radio" name="optradio" class="optradio" value="wrong"> Dave & Buster's 
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Dave & Buster's
             </label>
             <label class="form-check form-check-inline">
-                <input type="radio" name="optradio" class="optradio" value="wrong"> Sullivan's 
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Sullivan's
             </label>
             <label class="form-check form-check-inline">
                 <input type="radio" name="optradio" class="optradio" value="wrong"> Josies Woods Pub
@@ -123,7 +146,7 @@
                 <input type="radio" name="optradio" class="optradio" value="correct"> Roy Anderson
             </label>
             <label class="form-check form-check-inline">
-                <input type="radio" name="optradio" class="optradio" value="wrong"> Lonny Collins 
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Lonny Collins
             </label>
             <label class="form-check form-check-inline">
                 <input type="radio" name="optradio" class="optradio" value="wrong"> Daryl Philbin
@@ -149,7 +172,7 @@
                 <input type="radio" name="optradio" class="optradio" value="wrong"> Teapot
             </label>
 
-            <p>7. Which household appliance does Michael burn his foot on?</p>
+            <p>8. Which household appliance does Michael burn his foot on?</p>
             <label class="form-check form-check-inline">
                 <input type="radio" name="optradio" class="optradio" value="correct"> George Foreman Grill
             </label>
@@ -164,41 +187,41 @@
             </label>
 
 
-       
+
 
 
             <hr>
 
-</div>
-                    <div class="bg-primary text-white p-4">
-                        <p class="col-4 lead btn btn-lg btn-dark btn-block mx-auto" id="submitBtn">See Results</p>
-                    </div>
+        </div>
+        <div class="bg-primary text-white p-4">
+            <p class="col-4 lead btn btn-lg btn-dark btn-block mx-auto" id="submitBtn">See Results</p>
+        </div>
 
 
 
-                </div>
-            </div>
+    </div>
+    </div>
 
-            <div class="resultsPage">
-                <div class="col-6 mx-auto bg-primary text-white p-4">
-                    <h1> Results Page </h1>
-                    <p>Correct Answers: <span id= "numCorrectAnswers"> </p>
-                    <p>Incorrect Answers: <span id= "numIncorrectAnswers"> </p>
-                    <p class="col-4 lead btn btn-lg btn-dark btn-block" id="playAgain">Play Again</p>
-                </div>
-            </div>
-
-            
-
-
+    <div class="resultsPage">
+        <div class="col-6 mx-auto bg-primary text-white p-4">
+            <h1> Results Page </h1>
+            <p>Correct Answers: <span id="numCorrectAnswers"> </p>
+            <p>Incorrect Answers: <span id="numIncorrectAnswers"> </p>
+            <p class="col-4 lead btn btn-lg btn-dark btn-block" id="playAgain">Play Again</p>
+        </div>
+    </div>
 
 
 
 
 
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="game.js"></script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="game.js"></script>
 </body>
 
 </html>
